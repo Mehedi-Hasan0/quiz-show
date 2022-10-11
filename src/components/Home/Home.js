@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import MainBody from '../MainBody/MainBody';
 
 const Home = () => {
+    const quizData = useLoaderData();
+
     return (
         <div>
             <header>
@@ -11,7 +14,12 @@ const Home = () => {
             </header>
 
             <main>
-                <MainBody></MainBody>
+                {
+                    quizData.data.map(quiz => <MainBody
+                        key={quiz.id}
+                        quiz={quiz}
+                    ></MainBody>)
+                }
             </main>
             <footer>
                 <Footer></Footer>

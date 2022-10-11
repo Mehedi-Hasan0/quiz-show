@@ -3,7 +3,7 @@ import image from '../../assets/background-img.svg';
 
 const Header = () => {
     return (
-        <section id='home' className='flex md:flex-row flex-col py-6 bg-slate-50'>
+        <section id='home' className='flex md:flex-row flex-col py-6 bg-slate-50 mb-8'>
             <div className='flex justify-center items-start flex-col sm:px-16 px-6'>
                 <div className='flex flex-row justify-between items-center'>
                     <h1 className='font-poppins font-semibold ss:text-[64px] text-[44px] text-black ss:leading-[88px] leading-[52px]'>A community of Web Developers. </h1>

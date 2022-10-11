@@ -1,9 +1,10 @@
 import React from 'react';
 
-const MainBody = () => {
+const MainBody = ({ quiz }) => {
+    const { name, logo } = quiz;
     return (
         <div>
-            <h2>this is main section</h2>
+
         </div>
     );
 };
