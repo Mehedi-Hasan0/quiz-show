@@ -4,7 +4,7 @@ const MainBody = ({ quiz }) => {
     const { name, logo } = quiz;
     return (
         <div className='flex flex-col bg-white p-2 shadow-lg items-center max-w-xs mt-4
-        mb-16 mx-auto'>
+        mb-20 mx-auto'>
             <img src={logo} alt="logo" className='w-[220px] h-[220px] bg-slate-200' />
             <div className='flex flex-row justify-between items-center py-2 w-full'>
                 <p className='font-poppins'>{name}</p>
