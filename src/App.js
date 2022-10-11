@@ -5,6 +5,8 @@ import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Statistic from './components/Statistic/Statistic';
 import Main from './layout/Main';
+import error from './assets/error.svg'
+import QuizDetails from './components/QuizDetails/QuizDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +24,10 @@ function App() {
           element: <Quiz></Quiz>
         },
         {
+          path: '/quiz/:quizId',
+          element: <QuizDetails></QuizDetails>
+        },
+        {
           path: '/statistic',
           element: <Statistic></Statistic>
         },
@@ -30,6 +36,12 @@ function App() {
           element: <Blog></Blog>
         },
       ]
+    },
+    {
+      path: '*',
+      element: <div>
+        <h1 className='font-poppins font-medium text-4xl sm:text-5xl mx-auto mt-5'>Page not found <span className=' text-blue-400'> :(</span></h1>
+        <img className='w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] mx-auto' src={error} alt="error" /></div>
     }
   ])
   return (

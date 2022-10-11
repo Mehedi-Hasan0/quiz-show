@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/background-img.svg';
+import image from '../../assets/background-image.svg';
 
 const Header = () => {
     return (

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MainBody = ({ quiz }) => {
-    const { name, logo } = quiz;
+    const { id, name, logo } = quiz;
+    console.log(quiz);
     return (
         <div className='flex flex-col bg-white p-2 shadow-lg items-center max-w-xs mt-4
         mb-20 mx-auto'>
@@ -10,7 +12,7 @@ const MainBody = ({ quiz }) => {
                 <p className='font-poppins'>{name}</p>
                 <p className='font-poppins'>Q:</p>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded font-poppins text-sm">
-                    Get Started
+                    <Link to={`/quiz/${id}`}>Get Started</Link>
                 </button>
             </div>
         </div>
