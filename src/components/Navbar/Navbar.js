@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <nav className='flex justify-between items-center py-5 w-full bg-slate-50'>
+        <nav className='flex justify-between items-center py-5 w-full bg-slate-50 sticky top-0 shadow-md'>
             <img src={logo} alt="quiz show" className='w-[138px] h-[30px] ml-8' />
             <div className='nav-links sm:flex hidden items-center mr-8'>
                 <Link to='/'>Home</Link>
