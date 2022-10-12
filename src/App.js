@@ -32,14 +32,14 @@ function App() {
           element: <QuizDetails></QuizDetails>
         },
         {
-          path: '/statistic',
-          element: <Statistic></Statistic>
-        },
-        {
           path: '/blog',
           element: <Blog></Blog>
-        },
+        }
       ]
+    },
+    {
+      path: '/statistic',
+      element: <Statistic></Statistic>
     },
     {
       path: '*',
