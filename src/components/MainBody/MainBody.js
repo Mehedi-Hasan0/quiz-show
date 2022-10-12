@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const MainBody = ({ quiz }) => {
     const { id, name, logo } = quiz;
-    console.log(quiz);
     return (
         <div className='flex flex-col bg-white p-2 shadow-lg items-center max-w-xs mt-4
         mb-20 mx-auto'>
